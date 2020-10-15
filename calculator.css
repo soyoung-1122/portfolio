@@ -1,0 +1,116 @@
+/* * {margin:0px; padding:0px;}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.calculator {
+    background: rgb(78, 175, 126);
+    border-radius: 10px;
+    width: 220px;
+    padding: 30px;
+
+}
+
+.resultArea {
+    border-collapse:collapse;
+    height: 5rem; width:100%;
+    text-align: right;
+    margin-bottom: 5px;
+    color:white;
+    font-size: 25px;
+    background: transparent;
+}
+
+.inputArea {
+    border-collapse: collapse;
+    width:100%; height:16rem;
+    background: orange;
+    /* padding:10px; */
+/* }
+
+button {
+    width: 50px; height: 50px;
+    background-color: rgb(37, 36, 36);
+    border-radius: 100%;
+    border:none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    /* margin:5px 10px; */
+/* }
+
+.buttonRow {
+    width:100%; height:20%;
+    display:flex;
+    flex-direction: row; 
+} */ 
+
+div, button, p, h3 {
+    padding: 0;
+    margin: 0;
+}
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.calBody {
+    margin-top:10%;
+    border: 1px solid #1e1334;
+    background: #9174cc;
+    width: 240px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.resultArea {
+    width:100%;
+    height: 100px;
+    text-align: right;
+    color:white;
+    background-color: #1e1334;
+    border-radius: 10px;
+}
+
+#statusBar {
+    height: 30%;
+}
+
+#result {
+    height: 70%;
+    font-size: 45px;
+    padding: 10px;
+}
+
+.inputArea {
+    width: 100%;
+    height: 300px;
+    padding-top: 10px;
+}
+
+.buttonRow {
+    width:100%;
+    height: 60px;
+    display:flex;
+    flex-direction: row; 
+}
+
+button {
+    color:#1e1334;
+    width: 60px;
+    height: 55px;
+    border: none;
+    border-radius: 100%;
+    margin: 3px;
+    font-size: 40px;
+    outline: none;
+}

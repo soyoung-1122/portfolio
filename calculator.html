@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>soculator</title>
+        <link rel="stylesheet" href="calculator.css">
+        <script src="calculator.js"></script>
+    </head>
+    <body oncontextmenu="return false">
+        <div class="calculator">
+            <div class="calBody">
+                <div class="resultArea">
+                    <p id="statusBar"></p>
+                    <h3 id="result" onmousedown="soculator.clear(event)">0</h3>
+                </div>
+                <div class="inputArea">
+                    <div class="buttonRow">
+                        <button onclick="soculator.clearAll()">c</button>
+                        <button onclick="soculator.getInputOP('/')">/</button>
+                        <button onclick="soculator.getInputOP('x')">x</button>
+                        <button onclick="soculator.getInputOP('-')">-</button>
+                    </div>
+                    <div class="buttonRow">
+                        <button onclick="soculator.getInputNum('7')">7</button>
+                        <button onclick="soculator.getInputNum('8')">8</button>
+                        <button onclick="soculator.getInputNum('9')">9</button>
+                        <button onclick="soculator.getInputOP('+')" style="height: 115px; border-radius: 200px;">+</button>
+                    </div>
+                    <div class="buttonRow" style="width:75%;">
+                        <button onclick="soculator.getInputNum('4')">4</button>
+                        <button onclick="soculator.getInputNum('5')">5</button>
+                        <button onclick="soculator.getInputNum('6')">6</button>
+                    </div>
+                    <div class="buttonRow">
+                        <button onclick="soculator.getInputNum('1')">1</button>
+                        <button onclick="soculator.getInputNum('2')">2</button>
+                        <button onclick="soculator.getInputNum('3')">3</button>
+                        <button id="=" onclick="soculator.getEqual()" style="height: 115px; border-radius: 200px;">=</button>
+                    </div>
+                    <div class="buttonRow" style="width:75%;">
+                        <button onclick="soculator.getInputNum('0')" style="width:120px; border-radius: 200px;">0</button>
+                        <button onclick="soculator.checkDecimalPoint()">.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
